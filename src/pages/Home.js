@@ -5,6 +5,7 @@ import ClassComponent from '../components/State/ClassComponent';
 import ClassComponent2 from '../components/LifeCycle/ClassComponent';
 import Event from '../components/Event/Event';
 import { FuctionalComponent } from '../components/State/FuctionalComponent';
+import Condition from '../components/Condition/Condition';
 const Home = () => {
   return (
     <>
@@ -12,8 +13,9 @@ const Home = () => {
       <Extraction />
       <ClassComponent />
       <FuctionalComponent />
-      <ClassComponent2 /> */}
-      <Event />
+      <ClassComponent2 />
+      <Event /> */}
+      <Condition />
     </>
   );
 };
