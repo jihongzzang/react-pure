@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export const FuctionalComponent = () => {
+export default function FuctionalComponent() {
   const [date, setDate] = useState(() => {
     return new Date();
   }); //==>state Update
@@ -23,4 +23,4 @@ export const FuctionalComponent = () => {
       <h2>It is {date.toLocaleTimeString()}.</h2>
     </div>
   );
-};
+}
