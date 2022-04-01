@@ -4,6 +4,8 @@ import Reducer from '../components/Advanced/Hooks/Reducer';
 import WelcomeDialog from '../components/Advanced/Composition/WelcomeDialog';
 import Dialog from '../components/Advanced/Composition2/Dialog';
 import ThankYouDialog from '../components/Advanced/Composition2/ThankYouDialog';
+import Input from '../components/Advanced/HOC/Input';
+import Button from '../components/Advanced/HOC/Button';
 
 const Home = () => {
   return (
@@ -11,8 +13,10 @@ const Home = () => {
       {/* <State />
       <Reducer />
       <WelcomeDialog />
-      <Dialog /> */}
-      <ThankYouDialog />
+      <Dialog />
+      <ThankYouDialog /> */}
+      <Input />
+      <Button />
     </>
   );
 };
