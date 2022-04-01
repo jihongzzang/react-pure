@@ -1,0 +1,8 @@
+.Comments {
+  background-color: lightBlue;
+  padding: 10;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -6,6 +6,7 @@ import Dialog from '../components/Advanced/Composition2/Dialog';
 import ThankYouDialog from '../components/Advanced/Composition2/ThankYouDialog';
 import Input from '../components/Advanced/HOC/Input';
 import Button from '../components/Advanced/HOC/Button';
+import Memo from '../components/Advanced/Memoization/Memo';
 
 const Home = () => {
   return (
@@ -14,9 +15,10 @@ const Home = () => {
       <Reducer />
       <WelcomeDialog />
       <Dialog />
-      <ThankYouDialog /> */}
+      <ThankYouDialog />
       <Input />
-      <Button />
+      <Button /> */}
+      <Memo />
     </>
   );
 };
