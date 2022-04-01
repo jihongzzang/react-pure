@@ -1,7 +1,7 @@
 import React, { Profiler, memo, useState, useMemo } from 'react';
 import './CommentItem.css';
 
-function CommentItem({ title, content, likes, onClick }) {
+function CommentItem({ title, content, likes, parentClick }) {
   const [clickCount, setClickCount] = useState(0);
 
   function onRenderCallback(
@@ -17,7 +17,7 @@ function CommentItem({ title, content, likes, onClick }) {
   }
 
   const handleClick = () => {
-    // onClick();
+    parentClick();
     setClickCount(prev => prev + 1);
     alert(`${title} 눌림`);
   };

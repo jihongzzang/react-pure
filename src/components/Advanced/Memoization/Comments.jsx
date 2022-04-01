@@ -3,9 +3,13 @@ import CommentItem from './CommentItem';
 import './Comments.css';
 
 export default function Comments({ commentLists }) {
-  const handleClick = useCallback(() => {
+  const handleParentClick = useCallback(() => {
     console.log('눌림');
   }, []);
+
+  const handleParentClick2 = () => {
+    console.log('눌림');
+  };
 
   return (
     <div className="Comments">
@@ -15,7 +19,7 @@ export default function Comments({ commentLists }) {
           title={comment.title}
           content={comment.content}
           likes={comment.likes}
-          onClick={handleClick}
+          parentClick={handleParentClick2}
         />
       ))}
     </div>

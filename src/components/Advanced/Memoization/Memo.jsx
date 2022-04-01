@@ -22,7 +22,7 @@ export default function Memo() {
           likes: 1,
         },
       ]);
-    }, 3000);
+    }, 8000);
 
     return () => {
       clearInterval(interval);
