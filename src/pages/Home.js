@@ -8,6 +8,8 @@ import Input from '../components/Advanced/HOC/Input';
 import Button from '../components/Advanced/HOC/Button';
 import Memo from '../components/Advanced/Memoization/Memo';
 import Example from '../components/Advanced/Context/Example';
+import Portal from '../components/Advanced/Portal/Portal';
+
 const Home = () => {
   return (
     <>
@@ -18,8 +20,9 @@ const Home = () => {
       <ThankYouDialog />
       <Input />
       <Button />
-      <Memo /> */}
-      <Example />
+      <Memo />
+      <Example /> */}
+      <Portal />
     </>
   );
 };
