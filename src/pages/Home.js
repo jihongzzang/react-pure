@@ -9,6 +9,7 @@ import Button from '../components/Advanced/HOC/Button';
 import Memo from '../components/Advanced/Memoization/Memo';
 import Example from '../components/Advanced/Context/Example';
 import Portal from '../components/Advanced/Portal/Portal';
+import PropComponent from '../components/Advanced/PropTypes/Component';
 
 const Home = () => {
   return (
@@ -21,8 +22,9 @@ const Home = () => {
       <Input />
       <Button />
       <Memo />
-      <Example /> */}
-      <Portal />
+      <Example />
+      <Portal /> */}
+      <PropComponent />
     </>
   );
 };
