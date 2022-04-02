@@ -7,7 +7,7 @@ import ThankYouDialog from '../components/Advanced/Composition2/ThankYouDialog';
 import Input from '../components/Advanced/HOC/Input';
 import Button from '../components/Advanced/HOC/Button';
 import Memo from '../components/Advanced/Memoization/Memo';
-
+import Example from '../components/Advanced/Context/Example';
 const Home = () => {
   return (
     <>
@@ -17,8 +17,9 @@ const Home = () => {
       <Dialog />
       <ThankYouDialog />
       <Input />
-      <Button /> */}
-      <Memo />
+      <Button />
+      <Memo /> */}
+      <Example />
     </>
   );
 };
