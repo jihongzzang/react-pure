@@ -1,7 +1,8 @@
 import React from 'react';
+import MaterialUIExample from '../components/MaterialUI/MaterialUIExample';
 
 const Home = () => {
-  return <div>React 연습</div>;
+  return <MaterialUIExample />;
 };
 
 export default Home;
