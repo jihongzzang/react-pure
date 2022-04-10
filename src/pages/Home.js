@@ -15,25 +15,28 @@ const Home = () => {
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
+        alignItems: 'center',
       }}
     >
       <div
         style={{
           width: '50%',
-          height: '100vh',
+          height: '50%',
           display: 'flex',
+          flexDirection: 'column',
+          border: '1px solid tomato',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        {/* <RecoilRoot> */}
-        {/* <FontButton /> */}
-        {/* <Text /> */}
-        {/* <CharacterCounter /> */}
-        {/* <TodoList /> */}
-        {/* <CurrentUserInfo /> */}
-        {/* </RecoilRoot> */}
-        <TestMocking />
+        <RecoilRoot>
+          {/* <FontButton />
+          <Text />
+          <CharacterCounter /> */}
+          <TodoList />
+          <CurrentUserInfo />
+        </RecoilRoot>
+        {/* <TestMocking /> */}
       </div>
     </div>
   );
