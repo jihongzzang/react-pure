@@ -24,3 +24,8 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm start
 ```
+
+# Pull Request 와 관련된 내용
+
+- 브랜치에서 작업한 내용들에 관련된 내용 요약
+- 해당 브랜치 클론 후 사용
