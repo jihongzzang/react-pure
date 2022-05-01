@@ -2,18 +2,18 @@ import { useRef, useState } from 'react';
 import { createMockCard, checkIsMatched } from './utils';
 import { commonStyles, pageStyles } from './styles';
 
-const useForceUpdate = () => {
-  const [, render] = useState(0);
+// const useForceUpdate = () => {
+//   const [, render] = useState(0);
 
-  return () => render(i => i + 1);
-}; //함수형 컴포넌트에서 강제로 업데이트 하는 훅 선호하진 않는다.
+//   return () => render(i => i + 1);
+// }; //함수형 컴포넌트에서 강제로 업데이트 하는 훅 선호하진 않는다.
 
 const MatchPage = () => {
-  const forceUpdate = useForceUpdate();
+  // const forceUpdate = useForceUpdate();
   const [currentCard, setCurrentCard] = useState(createMockCard());
-  const { current: matches } = useRef([]);
+  // const { current: matches } = useRef([]);
 
-  // const [matches, setMatches] = useState([]);
+  const [matches, setMatches] = useState([]);
 
   const next = () => {
     setCurrentCard(createMockCard());
@@ -24,9 +24,9 @@ const MatchPage = () => {
 
     checkIsMatched().then(({ data: { isMatched } }) => {
       if (isMatched) {
-        // setMatches([currentCard, ...matches]);
-        matches.unshift(currentCard);
-        forceUpdate();
+        setMatches([...matches, currentCard]);
+        // matches.unshift(currentCard);
+        // forceUpdate();
       }
     });
   };
