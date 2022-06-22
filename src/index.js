@@ -4,13 +4,17 @@ import Router from './Router';
 import GlobalStyle from './styles/Global';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
+import { Provider } from 'react-redux';
+import { store } from './FinalSection/store';
+import { OlContextProvider } from './FinalSection/OlcontextProvider';
 
 ReactDOM.render(
-  <>
-    <GlobalStyle />
-    <ThemeProvider theme={theme}>
-      <Router />
-    </ThemeProvider>
-  </>,
+  <React.StrictMode>
+    <OlContextProvider>
+      <Provider store={store}>
+        <Router />
+      </Provider>
+    </OlContextProvider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
